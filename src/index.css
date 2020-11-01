@@ -1,0 +1,209 @@
+html, body {
+  margin: 0;
+  padding: 0,
+}
+
+@font-face {
+  font-family: 'Barlow';
+  src: './fonts/Barlow-Regular.ttf';
+  font-weight: 500;
+}
+
+* {
+  font-family: 'Barlow';
+}
+
+#root {
+  width: 100%;
+}
+
+/* -------------TRACK ---------- */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* -------------------MAIN------------------ */
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background-image: url('./images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------TEAM------------------ */
+
+.team-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.team-header-text {
+  text-align: center;
+  padding: 1em 0
+}
+
+.team-cards-wrapper {
+  flex: 1;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  min-width: 350px;
+  height: 80vh;
+  margin: 2em 0;
+  padding: 2em 3.5%;
+  box-sizing: border-box;
+}
+
+.team-card-image {
+  border-radius: 50%;
+  width: 80%;
+  margin: 2em 0;
+  transition: all ease 0.15s;
+}
+
+.team-card-image:hover {
+  width: 100%;
+  transition: all ease 0.15s;
+}
+
+.team-card-name {
+  color: #505050;
+  font-weight: 700;
+  margin: 0.5em 0;
+}
+
+.team-card-desc {
+  width: 80%;
+  margin: 1.5em 0;
+}
+
+.team-card-social {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%
+}
+
+.card-social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  height: 3em;
+  background-color: #323232;
+  border-radius: 50%;
+  transition: all ease 0.15s;
+}
+
+.card-social-button:hover {
+  background-color: #888;
+  width: 3.4em;
+  height: 3.4em;
+  transition: all ease 0.15s;
+}
+
+.card-social-icon {
+  width: 60% !important;
+  height: 60% !important;
+}
+
+/* ---------------------------CONTACT------------------------------- */
+
+.contact-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.contact-header {
+  text-align: center;
+  padding: 2em 0;
+}
+
+.contact-right {
+  min-width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  /* background-image: url('./images/cutting.jpg') */
+}
+
+/* ---------------------------Footer------------------------------- */
+
+.footer-wrapper {
+  min-height: 40vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: #323232;
+}
+
+.footer-social {
+  display: flex;
+}
+
+.footer-social-button {
+  width: 40px;
+  height: 40px;
+  margin: 0.5em;
+  transition: all ease 0.15s;
+}
+.footer-social-button:hover{
+  width: 60px;
+  height: 60px;
+  transition: all ease 0.15s;
+}
+
+.footer-social-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-copyright {
+  color:#f1f1f1;
+  font-weight: 600;
+}
+
+.footer-mentions {
+  color:#d3d3d3;
+}
+
+
