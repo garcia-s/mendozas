@@ -9,12 +9,8 @@ const center = {
 };
 
 const Contact = () => {
-
-
-
-
     const [map, setMap] = React.useState(null)
-
+    
     const onLoad = React.useCallback((map) => {
         const bounds = new window.google.maps.LatLngBounds();
         map.fitBounds(bounds);
